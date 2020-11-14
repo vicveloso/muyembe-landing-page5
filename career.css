@@ -19,7 +19,7 @@ a:hover {
 }
 
 .header ul {
-    padding-right: 1rem;
+    padding-right: 0.75rem;
     list-style: none;
     overflow: hidden;
     text-align: end;
@@ -104,55 +104,6 @@ a:hover {
     }
 }
 
-.illustration {
-    max-width: 60%;
-    height: auto;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin: 2rem;
-    padding-top: 4rem;
-}
-
-@media screen and (min-width: 280px)and (max-device-width: 800px) {
-    main {
-        grid: 1fr / 1fr;
-        text-align: center;
-        place-items: center;
-    }
-}
-
-form h3 {
-    text-align: center;
-    font-size: 1rem;
-}
-
-#datas {
-    border: 0;
-}
-
-form {
-    background-color: #FFBD59;
-    border-radius: 0.5rem;
-    color: black;
-    display: grid;
-    padding: 2rem;
-    max-width: 80%;
-    height: auto;
-}
-
-input {
-    border: transparent;
-    border-radius: 0.3rem;
-    padding: 0.5rem 1rem;
-}
-
-form h6 {
-    text-align: center;
-}
-
 button {
     background-color: #FF914D;
     border-radius: 0.3rem;
@@ -162,12 +113,126 @@ button {
     padding: 0.5rem 1rem;
 }
 
-.btn-form {
+.cta {
     text-align: center;
 }
 
-.cta {
+.img {
+    display: grid;
+    background-image: url("https://i.imgur.com/uuXzR6n.png");
+    background-repeat: no-repeat;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo {
+    padding: 2rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.culture-section-career {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: -0.5rem;
+}
+
+.titulo-culture {
+    font-size: 2rem;
+    color: black;
+}
+
+.titulo-carrer h1 {
+    font-size: 3rem;
+    color: black;
+}
+
+.titulo-culture h4 {
+    font-size: 1rem;
+    color: black;
+}
+
+.culture-btn {
+    padding: 0.5rem 1.5rem;
+}
+
+@media screen and (min-width: 280px)and (max-device-width: 800px) {
+    .culture-section-career {
+        grid: 1fr / 1fr;
+        text-align: center;
+        place-items: center;
+        margin-bottom: 1rem;
+    }
+    .titulo-culture h4 {
+        padding: 2rem;
+    }
+}
+
+.titulo-values h1 {
+    font-size: 3rem;
+    color: white;
     text-align: center;
+    margin-bottom: -1rem;
+}
+
+.values-section-career {
+    background-color: #FF914D;
+    color: white;
+}
+
+#container-values {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.values h2 {
+    font-size: 1.5rem;
+}
+
+.values h4 {
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 280px)and (max-device-width: 800px) {
+    #container-values {
+        grid: 1fr / 1fr;
+        grid-gap: 2rem;
+    }
+}
+
+.titulo-team h1 {
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+}
+
+#team-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 1rem;
+}
+
+.team h4 {
+    font-size: 0.75rem;
+}
+
+@media screen and (min-width: 280px)and (max-device-width: 800px) {
+    #team-section {
+        grid: 1fr / 1fr;
+        grid-gap: 2rem;
+    }
 }
 
 footer {
@@ -179,6 +244,10 @@ footer {
     justify-items: center;
 }
 
+.social {
+    place-self: center;
+}
+
 .footer h6,
 h3 {
     font-size: 0.75rem;
@@ -188,13 +257,12 @@ h3 {
     font-size: 0.5rem;
 }
 
-.social {
-    place-self: center;
-}
-
 @media screen and (min-width: 280px)and (max-device-width: 800px) {
     footer {
         grid: 1fr / 1fr;
         place-items: start;
+    }
+    .social {
+        place-self: start;
     }
 }
