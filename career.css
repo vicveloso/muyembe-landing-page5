@@ -1,0 +1,268 @@
+body {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #FF914D;
+    border-color: transparent;
+}
+
+a:hover {
+    font-weight: 700;
+}
+
+.header ul {
+    padding-right: 0.75rem;
+    list-style: none;
+    overflow: hidden;
+    text-align: end;
+    background-color: white;
+}
+
+.header li a {
+    display: block;
+    padding: 0.25rem;
+}
+
+.logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding-left: 2rem;
+}
+
+.menu {
+    clear: both;
+    max-height: 0;
+}
+
+.header .header-icon {
+    display: inline-block;
+    float: right;
+    padding: 2rem;
+    position: relative;
+    user-select: none;
+}
+
+.header .header-icon .icon {
+    background: black;
+    display: block;
+    height: 0.125rem;
+    position: relative;
+    width: 1.25rem;
+}
+
+.header .header-icon .icon:before,
+.header .header-icon .icon:after {
+    background: black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    background-color: white;
+}
+
+.header .header-icon .icon:before {
+    top: 0.3rem;
+}
+
+.header .header-icon .icon:after {
+    bottom: 0.3rem;
+}
+
+.header .header-btn {
+    display: none;
+}
+
+.header .header-btn:checked~.menu {
+    max-height: 15rem;
+}
+
+@media screen and (min-width: 1366px) {
+    .header li {
+        float: left;
+        margin-left: 8rem;
+    }
+    .header .menu {
+        clear: none;
+        max-height: none;
+    }
+    .header .header-icon {
+        display: none;
+    }
+}
+
+button {
+    background-color: #FF914D;
+    border-radius: 0.3rem;
+    border: #FF914D;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.5rem 1rem;
+}
+
+.cta {
+    text-align: center;
+}
+
+.img {
+    display: grid;
+    background-image: url("https://i.imgur.com/uuXzR6n.png");
+    background-repeat: no-repeat;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.titulo {
+    padding: 2rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.culture-section-career {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: -0.5rem;
+}
+
+.titulo-culture {
+    font-size: 2rem;
+    color: black;
+}
+
+.titulo-carrer h1 {
+    font-size: 3rem;
+    color: black;
+}
+
+.titulo-culture h4 {
+    font-size: 1rem;
+    color: black;
+}
+
+.culture-btn {
+    padding: 0.5rem 1.5rem;
+}
+
+@media screen and (min-width: 280px)and (max-device-width: 800px) {
+    .culture-section-career {
+        grid: 1fr / 1fr;
+        text-align: center;
+        place-items: center;
+        margin-bottom: 1rem;
+    }
+    .titulo-culture h4 {
+        padding: 2rem;
+    }
+}
+
+.titulo-values h1 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-bottom: -1rem;
+}
+
+.values-section-career {
+    background-color: #FF914D;
+    color: white;
+}
+
+#container-values {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.values h2 {
+    font-size: 1.5rem;
+}
+
+.values h4 {
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 280px)and (max-device-width: 800px) {
+    #container-values {
+        grid: 1fr / 1fr;
+        grid-gap: 2rem;
+    }
+}
+
+.titulo-team h1 {
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+}
+
+#team-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 1rem;
+}
+
+.team h4 {
+    font-size: 0.75rem;
+}
+
+@media screen and (min-width: 280px)and (max-device-width: 800px) {
+    #team-section {
+        grid: 1fr / 1fr;
+        grid-gap: 2rem;
+    }
+}
+
+footer {
+    background-color: #FF914D;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr);
+    padding: 1rem 2rem 1rem 2rem;
+    justify-items: center;
+}
+
+.social {
+    place-self: center;
+}
+
+.footer h6,
+h3 {
+    font-size: 0.75rem;
+}
+
+.footer h2 {
+    font-size: 0.5rem;
+}
+
+@media screen and (min-width: 280px)and (max-device-width: 800px) {
+    footer {
+        grid: 1fr / 1fr;
+        place-items: start;
+    }
+    .social {
+        place-self: start;
+    }
+}
