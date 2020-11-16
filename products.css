@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+/*/////////////////////CABEÇALHO/////////////////////*/
+
+
+.inicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.menu ul li{
+    display: inline;
+    padding-right: 5em;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #FFBD59;
+    font-size: 1.3em;
+}
+
+.menu button{
+    color: white;
+    background-color: #FFBD59;
+    border-style: none;
+    padding: 0.8em 2.5em 0.8em 2.5em;
+    border-radius: 8px;
+}
+
+/*/////////////////////SECTION ONE/////////////////////*/
+
+.section-one{
+    padding: 0 2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.one{
+    display: flex;
+    width: 33.3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.one p{
+    font-size: 3em;
+    padding: 1em 0 2em 1em;
+}
+
+.two{
+    width: 33.3%;
+}
+
+.three{
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.input input {
+    width: 15em;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    outline: none
+}
+
+/*/////////////////////SECTION TWO/////////////////////*/
+
+.section-two{
+    position: relative;
+    display: flex;
+    height: 500px;
+}
+
+#image{
+    position: absolute;
+    height: 500px;
+}
+
+#texto {
+    position: relative;
+    width: 40vw;
+    text-align: center;
+    margin-top: 12em;
+    margin-left: 6em;
+}
+
+#texto label{
+    font-size: 3em;
+}
+
+#texto p{
+    font-size: 1.8em;
+    text-align: left;
+}
+
+#texto button{
+    color: white;
+    background-color: #FFBD59;
+    border-style: none;
+    padding: 0.8em 2.5em 0.8em 2.5em;
+    border-radius: 8px;
+    margin-top: 2em;
+}
+
+/*/////////////////////SECTION THREE/////////////////////*/
+
+.section-three{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.venha-ser-img{
+    width: 50%;
+}
+
+.venha-ser-texto{
+    width: 50%;
+    font-size: 1.6em;
+}
+
+.venha-ser-texto h3{
+    font-size: 2em;
+}
+
+.venha-ser-texto ul{
+    list-style-type: none;
+}
+
+.venha-ser-texto ul li{
+    margin-top: 1em;
+}
+
+.venha-ser-texto button{
+    color: white;
+    background-color: #FFBD59;
+    border-style: none;
+    padding: 0.8em 2.5em 0.8em 2.5em;
+    border-radius: 8px;
+    margin-top: 2em;
+}
+
+/*/////////////////////SECTION FOUR/////////////////////*/
+
+.section-four{
+    width: 100%;
+    height: 400px;
+}
+
+.items{
+    text-align: center;
+    padding: 0 2em;
+    font-size: 1.6em;
+}
+
+#font{
+    font-size: 2.5em;
+}
+
+.beneficios ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.beneficios ul li{
+    padding-top: 3em;
+    list-style-type: none;
+    width: 25%;
+}
+
+/*/////////////////////SECTION FIVE/////////////////////*/
+
+.section-five{
+    text-align: center;
+    height: 450px;
+}
+
+.depo-cont{
+    padding: 0 2em;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.6em;
+}
+
+#dep-text{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 2em;
+}
+
+.depoimento-one{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    display: block;
+    text-align: center;
+}
+
+.depoimento-two{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    display: block;
+    text-align: center;
+}
+
+.depoimento-three{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    display: block;
+    text-align: center;
+}
+
+#bot-part{
+    color: white;
+    background-color: #FFBD59;
+    border-style: none;
+    padding: 0.8em 2.5em 0.8em 2.5em;
+    border-radius: 8px;
+    margin-top: 5em;
+}
+
+/*/////////////////////FOOTER/////////////////////*/
+
+footer{
+    background-color: #FF914D;
+    height: 200px;
+    padding-top: 3.5em;
+    color: white;
+    font-size: 1.6em;
+}
+
+.footer-cont{
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-follow a{
+    padding-right: 1em;
+}
+
+.item-produto ul{
+    list-style-type: none;
+    padding-top: 1em;
+}
+
+.item-ouvidoria ul{
+    list-style-type: none;
+    padding-top: 1em;
+}
+
+.item-bank ul{
+    list-style-type: none;
+    padding-top: 1em;
+}
+
+/*/////////////////////RESPONSIVIDADE/////////////////////*/
+
+@media only screen and (max-width: 900px){
+    .one p{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    body{
+        overflow-X: hidden;
+    }
+}
